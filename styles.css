@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+/* Variables */
+
+:root {
+  /* Colors */
+  --ORANGE: hsl(25, 97%, 53%);
+  --LIGHT-ORANGE: hsla(25, 95%, 57%, 0.827);
+  --WHITE: hsl(0, 0%, 100%);
+  --LIGHT-GRAY: hsl(217, 12%, 63%);
+  --MEDIUM-GRAY: hsl(216, 12%, 54%);
+  --DARK-BLUE: hsl(213, 19%, 18%);
+  --VERY-DARK-BLUE: hsl(213, 20%, 22%);
+  --DARK: hsl(216, 12%, 8%);
+}
+
+/* General Styles */
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: var(--LIGHT-GRAY);
+  background-color: var(--DARK);
+  height: 100vh;
+
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  color: var(--WHITE);
+  font-weight: 400;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Utility Classes */
+.container {
+  display: grid;
+  gap: 1rem;
+  background-color: var(--DARK-BLUE);
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Rating */
+
+.rating__icon img {
+  background-color: var(--VERY-DARK-BLUE);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.rating__stars {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-block: 0.5rem;
+}
+
+.rating__stars .btn {
+  min-width: 50px;
+  background-color: var(--VERY-DARK-BLUE);
+  color: var(--LIGHT-GRAY);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.rating__stars .btn:hover {
+  background-color: var(--ORANGE);
+  color: var(--WHITE);
+  transition: 0.3s ease;
+}
+
+.rating__stars .btn:focus {
+  background-color: var(--MEDIUM-GRAY);
+  color: var(--WHITE);
+}
+
+.rating__submit {
+  color: var(--WHITE);
+  background-color: var(--ORANGE);
+  border-radius: 30px;
+  padding-block: 1rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.rating__submit:hover {
+  background-color: var(--WHITE);
+  color: var(--ORANGE);
+  transition: 0.3s ease;
+}
+
+/* Thank-you */
+
+.thank-you {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you__user-rating {
+  background-color: var(--VERY-DARK-BLUE);
+  color: var(--LIGHT-ORANGE);
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin: 0 auto;
+}
