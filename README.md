@@ -11,7 +11,7 @@ Building realistic projects to improve my front-end skills.
 
 ### Links
 
-- Live Site URL: [Interactive rating component](https://product-prev1ew-card.netlify.app/)
+- Live Site URL: [Interactive rating component](https://interactive-rat1ng-component.netlify.app/)
 
 ## Built with
 
